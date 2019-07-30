@@ -1,6 +1,7 @@
 import requests
+import sys
 
-api_token = 'Put token here'
+api_token = str(sys.argv[1])
 api_url_base = 'https://ts.snipe-it.io/api/v1/hardware/'
 
 headers = {'Content-Type': 'application/json',
